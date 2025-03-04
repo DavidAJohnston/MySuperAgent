@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-900 text-white;
+  background-image: url('/background-cityscape.jpg'); /* Optional: Add a blurred cityscape background */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
