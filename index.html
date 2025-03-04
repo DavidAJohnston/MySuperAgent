@@ -50,12 +50,13 @@
         <!-- Onboarding Modal (Hidden by default) -->
         <div id="onboardingModal" class="modal">
             <div class="modal-content">
-                <span class="close">&times;</span>
+                <span class="close">×</span>
                 <div id="onboardingSteps">
                     <!-- Step 1: Welcome -->
                     <div class="step" data-step="1">
                         <h2>Welcome to My Super Agent!</h2>
                         <p>Let’s unlock your AI future. Your Super Agent is a decentralized, fiduciary AI that protects your interests and navigates the AI-driven world for you.</p>
+                        <img src="super-agent-avatar.png" alt="Super Agent Avatar" class="super-agent-avatar" style="display: none;">
                         <button id="nextStep1">Start Onboarding</button>
                         <button id="learnMore">Learn More</button>
                     </div>
@@ -78,16 +79,18 @@
                         <button id="connectWallet">Connect Wallet</button>
                     </div>
 
-                    <!-- Step 4: View Brain Power -->
+                    <!-- Step 4: View Brain Power and MOR Deposit -->
                     <div class="step" data-step="4" style="display: none;">
                         <h2>Your Brain Power – Fueling Your Super Agent</h2>
                         <div class="brain-power">
-                            <p>Current Brain Power: <span id="brainPower">500 BP</span></p>
+                            <p>Current Brain Power: <span id="brainPower">0 BP</span></p>
                             <div class="progress-bar">
-                                <div class="progress" style="width: 75%;"></div>
+                                <div class="progress" style="width: 0%;"></div>
                             </div>
-                            <p>Brain Power measures the computational capacity your Super Agent accesses. Stake MOR tokens to increase your Brain Power.</p>
-                            <button id="stakeTokens">Stake MOR Tokens Now</button>
+                            <p>Deposit MOR tokens to increase your Brain Power (1 MOR = 0.1 Brain Power).</p>
+                            <input type="number" id="morDeposit" placeholder="Enter MOR amount" min="0" step="0.1">
+                            <button id="depositMor">Deposit MOR</button>
+                            <button id="stakeTokens">Next</button>
                         </div>
                     </div>
 
@@ -95,8 +98,9 @@
                     <div class="step" data-step="5" style="display: none;">
                         <h2>Welcome to Your Super Agent Dashboard!</h2>
                         <div class="dashboard-preview">
+                            <img src="super-agent-avatar.png" alt="Super Agent Avatar" class="super-agent-avatar completed">
                             <p>Your Super Agent is now active and ready to protect your interests as a fiduciary.</p>
-                            <p>Brain Power: <span id="dashboardBrainPower">500 BP</span></p>
+                            <p>Brain Power: <span id="dashboardBrainPower">0 BP</span></p>
                             <p>Active Tasks: 3</p>
                             <p>Privacy Status: 100% Secure</p>
                             <button id="exploreDashboard">Explore Dashboard</button>
@@ -115,20 +119,27 @@
             <div class="dashboard-content">
                 <div class="card">
                     <h3>Super Agent Status</h3>
+                    <img src="super-agent-avatar.png" alt="Super Agent Avatar" class="super-agent-avatar completed">
                     <p>Active Tasks: 3</p>
                     <p>Fiduciary Alignment: 100%</p>
                 </div>
                 <div class="card">
                     <h3>Brain Power</h3>
-                    <p>Current: <span id="dashboardBrainPowerLive">500 BP</span></p>
-                    <button id="stakeMoreTokens">Stake More MOR Tokens</button>
+                    <p>Current: <span id="dashboardBrainPowerLive">0 BP</span></p>
+                    <input type="number" id="morDepositDashboard" placeholder="Add more MOR" min="0" step="0.1">
+                    <button id="depositMoreMor">Deposit MOR</button>
+                </div>
+                <div class="card">
+                    <h3>Earnings from Super Agent</h3>
+                    <p>Earned: $<span id="earningsCounter">0.00</span></p>
+                    <p>Updated based on Super Agent activity.</p>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 My Super Agent. All rights reserved.</p>
+        <p>© 2025 My Super Agent. All rights reserved.</p>
         <a href="https://x.com/DJohnstonEC/status/1887195295983051190">Learn More About Super Agents</a>
     </footer>
 
