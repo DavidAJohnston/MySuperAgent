@@ -9,12 +9,6 @@ Welcome to **My Super Agent** – your trusted, decentralized AI fiduciary in th
 - [About](#about)
 - [Features](#features)
 - [Getting Started](#getting-started)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
-- [Learn More](#learn-more)
 
 ## About
 My Super Agent is a groundbreaking platform built to empower individuals with decentralized, fiduciary AI agents (Super Agents) that act in their best interests. Drawing inspiration from [David A. Johnston’s vision on X](https://x.com/DJohnstonEC/status/1887195295983051190), Super Agents are individualized, open-source, and private, protecting users from Extractive AI and enhancing productivity in an agentic world.
