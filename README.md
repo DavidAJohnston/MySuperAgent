@@ -31,13 +31,4 @@ This repository contains the front-end code for `mysuperagent.io`, including the
 ## Getting Started
 To explore or contribute to My Super Agent, clone this repository and deploy it locally or on a platform like Vercel. This project is a static website built with HTML, CSS, and JavaScript, with plans for Web3 and AI integrations.
 
-### Prerequisites
-- A modern web browser (Chrome, Firefox, Safari, etc.)
-- Node.js and npm (for potential Web3 integrations or build processes)
-- Git (for cloning the repository)
 
-## Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/DavidAJohnston/MySuperAgent.git
-   cd MySuperAgent
